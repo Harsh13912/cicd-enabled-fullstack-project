@@ -1,0 +1,17 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+frontend/dist/
+
+# Java / Maven build files
+target/
+*.jar
+*.war
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Environment variables (Never push secrets to GitHub!)
+.env

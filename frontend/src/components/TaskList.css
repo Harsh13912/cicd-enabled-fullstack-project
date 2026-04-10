@@ -1,0 +1,102 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-color: #d1d5db;
+}
+
+.task-item.completed {
+    opacity: 0.6;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.task-checkbox {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.task-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #3b82f6;
+}
+
+.task-details {
+    flex: 1;
+}
+
+.task-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.task-description {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.task-item.completed .task-description {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background-color: #fee2e2;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: #9ca3af;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 16px;
+}
