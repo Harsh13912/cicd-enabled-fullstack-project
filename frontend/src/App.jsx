@@ -65,7 +65,7 @@ function App() {
             <div className="container">
                 <header className="app-header">
                     <h1>Task Manager</h1>
-                    <p className="subtitle">CI/CD DevOps Project</p>
+                    <p className="subtitle">CI/CD DevOps Project - V2</p>
                 </header>
 
                 {error && (
