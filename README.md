@@ -306,9 +306,9 @@ git --version    # Should show Git version
    ```
 
 3. **Access the application**
-    - Frontend: http://localhost:3000
-    - Backend API: http://localhost:8080/api/tasks
-    - H2 Console: http://localhost:8080/h2-console
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8080/api/tasks
+   - H2 Console: http://localhost:8080/h2-console
 
 4. **Stop services**
    ```bash
@@ -467,9 +467,9 @@ PUT /api/tasks/{id}/toggle
 #### Frontend (Netlify)
 
 1. **Connect Repository**
-    - Login to [Netlify](https://netlify.com)
-    - Click "Add new site" → "Import an existing project"
-    - Connect your GitHub repository
+   - Login to [Netlify](https://netlify.com)
+   - Click "Add new site" → "Import an existing project"
+   - Connect your GitHub repository
 
 2. **Configure Build Settings**
    ```
@@ -485,7 +485,7 @@ PUT /api/tasks/{id}/toggle
    ```
 
 4. **Deploy**
-    - Netlify auto-deploys on every push to `main`
+   - Netlify auto-deploys on every push to `main`
 
 #### Backend (Render)
 
@@ -501,18 +501,18 @@ PUT /api/tasks/{id}/toggle
    ```
 
 3. **Create Web Service on Render**
-    - Go to [Render Dashboard](https://render.com)
-    - Click "New +" → "Web Service"
-    - Select "Deploy an existing image"
-    - Image URL: `YOUR_USERNAME/task-manager-backend:latest`
+   - Go to [Render Dashboard](https://render.com)
+   - Click "New +" → "Web Service"
+   - Select "Deploy an existing image"
+   - Image URL: `YOUR_USERNAME/task-manager-backend:latest`
 
 4. **Configure Service**
-    - Instance Type: Free
-    - Environment Variable: `SPRING_PROFILES_ACTIVE=prod`
+   - Instance Type: Free
+   - Environment Variable: `SPRING_PROFILES_ACTIVE=prod`
 
 5. **Get Deploy Hook**
-    - Settings → Deploy Hook → Copy URL
-    - Add to GitHub Secrets as `RENDER_DEPLOY_HOOK_URL`
+   - Settings → Deploy Hook → Copy URL
+   - Add to GitHub Secrets as `RENDER_DEPLOY_HOOK_URL`
 
 #### GitHub Secrets Setup
 
@@ -562,9 +562,9 @@ Contributions are what make the open-source community such an amazing place to l
    ```
 
 4. **Make Your Changes**
-    - Write clean, documented code
-    - Follow existing code style
-    - Add tests if applicable
+   - Write clean, documented code
+   - Follow existing code style
+   - Add tests if applicable
 
 5. **Commit Your Changes**
    ```bash
@@ -578,9 +578,9 @@ Contributions are what make the open-source community such an amazing place to l
    ```
 
 7. **Open a Pull Request**
-    - Go to the original repository
-    - Click "New Pull Request"
-    - Describe your changes
+   - Go to the original repository
+   - Click "New Pull Request"
+   - Describe your changes
 
 ### Development Guidelines
 
