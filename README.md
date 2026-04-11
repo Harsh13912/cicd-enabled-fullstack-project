@@ -529,13 +529,13 @@ Add these secrets in GitHub Settings → Secrets and variables → Actions:
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Dashboard](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot%202026-04-11%20193704.png)
+<img src="screenshots/Screenshot%202026-04-11%20193704.png" width="800" height="400" alt="Dashboard">
 
 ### CI/CD Guide Panel
-![CI/CD Guide](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot%202026-04-11%20193214.png)
+<img src="screenshots/Screenshot%202026-04-11%20193214-1.png" width="400" height="600" alt="CI/CD Guide">
 
 ### Mobile Responsive
-![Mobile View](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot_2026-04-11-23-51-59-440_com.android.chrome.jpg.jpeg)
+<img src="screenshots/Screenshot_2026-04-11-23-51-59-440_com.android.chrome.jpg.jpeg" width="375" height="667" alt="Mobile View">
 
 ---
 
