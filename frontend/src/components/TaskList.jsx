@@ -1,19 +1,26 @@
 import React from 'react';
 import './TaskList.css';
 
-const TaskList = ({ tasks, onDelete, onToggle }) => {
+const TaskList = ({ tasks, onDelete, onToggle, disabled }) => {
     if (tasks.length === 0) {
         return (
             <div className="empty-state">
-                <p>No tasks yet. Add one above!</p>
+                <div className="empty-icon">📝</div>
+                <h3>No tasks yet</h3>
+                <p>Create your first task above to get started!</p>
+                <p className="empty-hint">Data stored in H2 in-memory database</p>
             </div>
         );
     }
 
     return (
         <div className="task-list">
-            {tasks.map((task) => (
-                <div key={task.id} className={`task-item ${task.completed ? 'completed' : ''}`}>
+            {tasks.map((task, index) => (
+                <div
+                    key={task.id}
+                    className={`task-item ${task.completed ? 'completed' : ''}`}
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                >
                     <div className="task-content">
                         <div className="task-checkbox">
                             <input
@@ -21,6 +28,7 @@ const TaskList = ({ tasks, onDelete, onToggle }) => {
                                 checked={task.completed}
                                 onChange={() => onToggle(task.id)}
                                 id={`task-${task.id}`}
+                                disabled={disabled}
                             />
                             <label htmlFor={`task-${task.id}`}></label>
                         </div>
@@ -35,6 +43,7 @@ const TaskList = ({ tasks, onDelete, onToggle }) => {
                         className="delete-btn"
                         onClick={() => onDelete(task.id)}
                         aria-label="Delete task"
+                        disabled={disabled}
                     >
                         ×
                     </button>

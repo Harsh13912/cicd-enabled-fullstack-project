@@ -5,29 +5,39 @@
 }
 
 .task-item {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 18px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.4s ease-out backwards;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .task-item:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-color: #d1d5db;
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgba(102, 126, 234, 0.5);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .task-item.completed {
     opacity: 0.6;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.task-item.completed:hover {
+    opacity: 0.8;
 }
 
 .task-content {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     flex: 1;
 }
 
@@ -37,10 +47,20 @@
 }
 
 .task-checkbox input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
-    accent-color: #3b82f6;
+    accent-color: #667eea;
+    transition: transform 0.2s ease;
+}
+
+.task-checkbox input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+.task-checkbox input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .task-details {
@@ -50,53 +70,145 @@
 .task-title {
     margin: 0;
     font-size: 16px;
-    font-weight: 500;
-    color: #111827;
+    font-weight: 600;
+    color: white;
+    transition: color 0.2s ease;
 }
 
 .task-item.completed .task-title {
     text-decoration: line-through;
-    color: #9ca3af;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .task-description {
-    margin: 4px 0 0;
+    margin: 6px 0 0;
     font-size: 14px;
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
 }
 
 .task-item.completed .task-description {
     text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .delete-btn {
-    background: none;
-    border: none;
-    color: #ef4444;
+    background: rgba(220, 38, 38, 0.2);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    color: #fca5a5;
     font-size: 28px;
     cursor: pointer;
     padding: 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
     flex-shrink: 0;
+    line-height: 1;
+    font-weight: 300;
 }
 
 .delete-btn:hover {
-    background-color: #fee2e2;
+    background: rgba(220, 38, 38, 0.3);
+    border-color: rgba(220, 38, 38, 0.5);
+    transform: scale(1.05);
+}
+
+.delete-btn:active {
+    transform: scale(0.95);
+}
+
+.delete-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
 }
 
 .empty-state {
     text-align: center;
-    padding: 48px 20px;
-    color: #9ca3af;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.empty-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
 }
 
 .empty-state p {
-    margin: 0;
-    font-size: 16px;
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.empty-hint {
+    font-size: 13px !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .task-item {
+        padding: 14px 16px;
+    }
+
+    .task-title {
+        font-size: 15px;
+    }
+
+    .task-description {
+        font-size: 13px;
+    }
+
+    .delete-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
 }

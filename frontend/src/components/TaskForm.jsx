@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './TaskForm.css';
 
-const TaskForm = ({ onAdd }) => {
+const TaskForm = ({ onAdd, disabled }) => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
 
@@ -32,6 +32,7 @@ const TaskForm = ({ onAdd }) => {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     maxLength={100}
+                    disabled={disabled}
                 />
             </div>
             <div className="form-group">
@@ -42,10 +43,11 @@ const TaskForm = ({ onAdd }) => {
             onChange={(e) => setDescription(e.target.value)}
             rows={3}
             maxLength={500}
+            disabled={disabled}
         />
             </div>
-            <button type="submit" className="submit-btn">
-                Add Task
+            <button type="submit" className="submit-btn" disabled={disabled}>
+                {disabled ? 'Adding...' : '+ Add Task'}
             </button>
         </form>
     );
