@@ -529,13 +529,13 @@ Add these secrets in GitHub Settings → Secrets and variables → Actions:
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Task+Manager+Dashboard)
+![Dashboard](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot%202026-04-11%20193704.png)
 
 ### CI/CD Guide Panel
-![CI/CD Guide](https://via.placeholder.com/400x600?text=CI%2FCD+Testing+Guide)
+![CI/CD Guide](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot%202026-04-11%20193214.png)
 
 ### Mobile Responsive
-![Mobile View](https://via.placeholder.com/375x667?text=Mobile+Responsive+View)
+![Mobile View](https://github.com/Harsh13912/cicd-enabled-fullstack-project/blob/main/screenshots/Screenshot_2026-04-11-23-51-59-440_com.android.chrome.jpg.jpeg)
 
 ---
 
@@ -616,7 +616,7 @@ copies of the Software...
 
 **Project Link:** [https://github.com/Harsh13912/cicd-enabled-fullstack-project](https://github.com/Harsh13912/cicd-enabled-fullstack-project)
 
-**LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-profile)
+**LinkedIn:** [Harsh Kumar](www.linkedin.com/in/harsh-kumar-30a45928b)
 
 **Email:** 23bcs13912@gmail.com
 
