@@ -529,13 +529,13 @@ Add these secrets in GitHub Settings → Secrets and variables → Actions:
 ## 📸 Screenshots
 
 ### Main Dashboard
-<img src="screenshots/Screenshot%202026-04-11%20193704.png" width="800" height="400" alt="Dashboard">
+<img src="screenshots/Screenshot%202026-04-11%20193704.png" width="800" height="500" alt="Dashboard">
 
 ### CI/CD Guide Panel
-<img src="screenshots/Screenshot%202026-04-11%20193214-1.png" width="400" height="600" alt="CI/CD Guide">
+<img src="screenshots/Screenshot%202026-04-11%20193214-1.png" width="300" height="600" alt="CI/CD Guide">
 
 ### Mobile Responsive
-<img src="screenshots/Screenshot_2026-04-11-23-51-59-440_com.android.chrome.jpg.jpeg" width="375" height="667" alt="Mobile View">
+<img src="screenshots/Screenshot_2026-04-11-23-51-59-440_com.android.chrome.jpg.jpeg" width="338" height="660" alt="Mobile View">
 
 ---
 
