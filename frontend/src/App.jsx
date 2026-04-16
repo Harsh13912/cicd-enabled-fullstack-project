@@ -76,7 +76,7 @@ function App() {
             <div className="main-content">
                 <div className="container">
                     <header className="app-header">
-                        <h1 className="retro-title">CI/CD ENABLED FULL STACK APPLICATION</h1>
+                        <h1 className="retro-title">CI/CD ENABLED FULL STACK APPLICATION v2</h1>
                         <p className="subtitle">React + Spring Boot + Docker + GitHub Actions</p>
                     </header>
 
